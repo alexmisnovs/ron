@@ -1,7 +1,7 @@
 var jokeDiv = document.getElementById('joke');
 
 const generateJoke = () => {
-    fetch("http://api.icndb.com/jokes/random?firstName=Ron&lastName=Bearningsworth&limitTo=[explicit]")
+    fetch("https://api.icndb.com/jokes/random?firstName=Ron&lastName=Bearningsworth&limitTo=[explicit]")
         .then((resp) => resp.json()) // Transform the data into json
         .then(function (data) {
             // Create and append the li's to the ul
