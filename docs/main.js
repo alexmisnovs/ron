@@ -6,7 +6,7 @@ const generateJoke = () => {
         .then(function (data) {
             // Create and append the li's to the ul
             jokeDiv.innerHTML = `<p>${data.value.joke}</p>`
-            console.log(data.value.joke);
+            //console.log(data.value.joke);
         })
 }
 
