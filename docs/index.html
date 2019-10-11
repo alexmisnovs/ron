@@ -5,45 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Ron Bearingsworth</title>
 </head>
 
 <body>
-    <div class="container has-margin-top-30">
-        <div class="section">
-            <article class="media">
-                <figure class="media-left is-two-fifths">
-                    <p class="image is-128x128">
-                        <img class="is-rounded" src="/profile.png">
-                    </p>
-                </figure>
-                <div class="media-content">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title" id="joke">
-                                “Ron doesnt flush the toilet.. He scares the shit out of it..”
-                            </p>
-                            <p class="subtitle">
-                                <i class="fas fa-copyright"></i> Ron Bearingsworth
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-
+    <div class="main">
+        <div class="container pt-5">
+            <div class="jumbotron">
+                <div class="media  ">
+                    <img src="/docs/profile-new.png" class="mr-5 rounded" alt="...">
+                    <div class="media-body">
+                        <h1 class="display-4">Bearingsworth Official</h1>
+                        <p class="lead" id="joke">Ron never flushes the toilet. He scares the shit out of it.</p>
                     </div>
                 </div>
+                <hr class="my-4">
+                <p>To get a random Joke about Ron - Use buttons bellow</p>
+                <a class="btn btn-primary btn-lg mr-1" onclick="generateJoke()" href="#">Random</a>
+                <a class="btn btn-danger btn-lg mr-1" onclick="generateJoke('explicit')" href="#">Shish Kebab</a>
+                <a class="btn btn-primary btn-lg mr-1" onclick="generateJoke('nerdy')" href="#">Nerdy</a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-8">
 
-            </article>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-8">
+
+                </div>
+            </div>
         </div>
-
-        <a class="button is-large is-primary is-rounded" onclick="generateJoke()" href="#">Random joke</a>
-        <a class="button is-large is-danger is-rounded" onclick="generateJoke('explicit')" href="#">Explicit joke</a>
-        <a class="button is-large is-warning is-rounded" onclick="generateJoke('nerdy')" href="#">Nerdy joke</a>
     </div>
 
-    <script src="main.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <div class="container mb-5">
+        <!-- videos start    -->
+        <h2 class="text-center mt-3 ">Rons Latest Videos</h2>
+        <div class="row mt-5">
+            <div class="col">
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/_xfhkDBoUQQ?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/ST4dZGZMSb0?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/MAHZqC0V-Vc?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
+            </div>
+            <div class="col">
+                <iframe width="480" height="315" src="https://www.youtube.com/embed/kzvRyx0qmGA?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    </div>
 </body>
 
 </html>

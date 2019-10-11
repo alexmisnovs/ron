@@ -1,0 +1,12 @@
+body
+{
+    
+}
+.main {
+    width: 100%;
+    background: #fff;
+    background-image: url('/docs/background.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat; 
+     /* background-position: center; */
+}
