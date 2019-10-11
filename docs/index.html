@@ -5,17 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <title>Ron Bearingsworth</title>
 </head>
 
 <body>
-    <img src="profile.png" alt="Ron Bearingsworth">
-    <h1>Ron Bearingsworth The Manliest of Men</h1>
+    <div class="container">
+        <div class="section ">
+            <article class="media">
+                <figure class="media-left is-two-fifths">
+                    <p class="image is-128x128">
+                        <img src="/profile.png">
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>Ron Bearingsworth</strong> <small>@ronbearingsworth</small>
+                            <br>
+                        </p>
+                        <div id="joke"></div>
+                    </div>
 
-    <div id="joke"></div>
-    <a class="btn" onclick="generateJoke()" href="#">Get a new joke</a>
+                </div>
+                <div class="media-right">
+                    <button class="delete"></button>
+                </div>
+            </article>
+        </div>
+
+        <a class="button is-large is-primary is-rounded" onclick="generateJoke()" href="#">Get a new joke</a>
+    </div>
 
     <script src="main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
 </body>
 
 </html>
